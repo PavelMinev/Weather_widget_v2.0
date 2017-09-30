@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Simple weather widget">  
+  <meta name="author" content="Minev Pavel">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Paris, Float</title>
+
+  <link href="css/floatwidget.css" rel="stylesheet">
+</head>
+<body>
+    <div class="widget-bg">
+        <div class="widget">
+            <div class="one-day-weather"> 
+                <div class="widget-date">
+                    <span class="widget-date__span">Friday</span>
+                    <p class="widget-date__p">August, 23rd</p>
+                </div>
+
+                <div class="widget-temperature">
+                    <span class="widget-temperature__span">12 °</span>
+                    <p class="widget-temperature__p">Paris, France</p>
+                    <div class="widget-wind">  
+                        <img class="widget-wind__img" src="img/wind.png" alt="wind.png">
+                        <p class="widget-wind__p">14 <span class="widget-wind__span">mph</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <ul class="week-weather">
+                <li class="week-weather__button"><img src="img/back.png" alt="back.png"></li>
+                <li class="week-weather__item">
+                    <p class="week-weather__item-day">Monday</p>
+                    <div class="week-weather__item-img">
+                        <img src="img/rain.png" alt="rain.png">            
+                    </div>
+                    <p>10 °</p>
+                </li>
+                <li class="week-weather__item">
+                    <p class="week-weather__item-day">Tuesday</p>
+                    <div class="week-weather__item-img">
+                        <img src="img/cloudy.png" alt="cloudy.png">            
+                    </div>
+                    <p>15 °</p>
+                </li>
+                <li class="week-weather__item">
+                    <p class="week-weather__item-day">Wednesday</p>
+                    <div class="week-weather__item-img">
+                        <img src="img/sunny.png" alt="sunny.png">            
+                    </div>
+                    <p>23 °</p>
+                </li>
+                <li class="week-weather__item week-weather__item--hidden-sm">
+                    <p class="week-weather__item-day">Thursday</p>
+                    <div class="week-weather__item-img">
+                        <img src="img/overcast.png" alt="overcast.png">            
+                    </div>
+                    <p>18 °</p>
+                </li>
+                <li class="week-weather__button"><img src="img/next.png" alt="next.png"></li>
+            </ul>
+        </div>
+    </div>
+
+    
+      
+
+</body>
+</html>

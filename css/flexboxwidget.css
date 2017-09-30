@@ -1,0 +1,200 @@
+html, p, body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: Lato-Light;
+  src: url(../fonts/lato-light.ttf); }
+
+@font-face {
+  font-family: Lato-Black;
+  src: url(../fonts/Lato-black.ttf); }
+
+body {
+  font-family: Lato-Light, Arial, Sans-Serif;
+  color: #ffffff;
+  line-height: 1.3; }
+
+.widget-bg {
+  background: -webkit-radial-gradient(top, circle, #b9bec2, #192b39);
+  background: -o-radial-gradient(top, circle, #b9bec2, #192b39);
+  background: radial-gradient(circle at top, #b9bec2, #192b39);
+  padding: 65px 55px 95px 55px;
+  max-width: 690px;
+  max-height: 440px; }
+
+.widget {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/paris.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 65px 60px 15px 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.one-day-weather {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+
+.widget-date {
+  margin-right: 30px;
+  padding-top: 5px; }
+
+.widget-date__span {
+  font-size: 2.14em; }
+
+.widget-date__p {
+  font-size: 1em; }
+
+.widget-wind {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 12px;
+  margin-top: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.widget-temperature__span {
+  font-size: 6.6em;
+  font-family: Lato-Black, Arial, sans-serif; }
+
+.widget-temperature__p {
+  font-size: 1.48em;
+  margin-left: 10px;
+  margin-top: -20px; }
+
+.widget-wind__span {
+  font-size: 0.6em; }
+
+.widget-wind__p {
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-left: 10px; }
+
+.widget-wind__img {
+  width: 43px;
+  height: 27px; }
+
+.week-weather {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0; }
+
+.week-weather__item {
+  -webkit-box-flex: 125;
+  -webkit-flex: 125;
+      -ms-flex: 125;
+          flex: 125;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.week-weather__button {
+  -webkit-box-flex: 40;
+  -webkit-flex: 40;
+      -ms-flex: 40;
+          flex: 40;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.week-weather__item-day {
+  font-size: 1.1em; }
+
+.week-weather__item-img {
+  height: 40px; }
+
+.week-weather__item-img > img {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9); }
+
+@media screen and (max-width: 700px) {
+  .one-day-weather {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    background: rgba(0, 0, 0, 0.5); } }
+
+@media screen and (max-width: 600px) {
+  .week-weather__item--hidden-sm {
+    display: none; }
+  .widget-temperature__span {
+    font-size: 5.5em; } }
+
+@media screen and (max-width: 500px) {
+  .widget {
+    padding: 25px 30px 15px 30px; }
+  .one-day-weather {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+  .week-weather__item-day {
+    font-size: 0.9em; } }
